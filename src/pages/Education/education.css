@@ -1,0 +1,23 @@
+.card-container {
+  display: grid;
+  justify-content: center;
+  overflow-x: auto; /* Add horizontal scrolling if needed */
+  gap: 20px; /* Adjust the gap to control the spacing between cards */
+  max-width: 100%; /* Adjust the maximum width as needed */
+}
+
+.card {
+  grid: 0 0 auto; /* Allow cards to grow to their content width */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.849);
+  font-family: Arial;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.card h3 {
+  margin: 0;
+}
+
+.card:hover {
+  opacity: 0.7;
+}
