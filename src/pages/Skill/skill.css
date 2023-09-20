@@ -1,0 +1,72 @@
+.home {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center; /* Center-align text within the container */
+  position: relative;
+}
+
+.home-body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 8rem;
+  width: 100%;
+  max-width: 1200px; /* Add a max-width to control content width */
+  box-sizing: border-box;
+}
+
+.home-description {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-direction: column;
+  flex: 0.5;
+  width: 100%;
+  height: fit-content;
+}
+
+.home-description h3 {
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.home-description p {
+  font-size: 1.25rem;
+  color: #050505;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (min-width: 992px) and (max-width: 1380px) {
+  .home-description h3 {
+    font-size: 3.3rem;
+    margin-bottom: 30px;
+  }
+  .home-description p {
+    font-size: 1.15rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .home-body {
+    padding-top: 2rem;
+    flex-direction: column-reverse;
+  }
+
+  .home-description {
+    flex: 0.6;
+    padding: 20px;
+  }
+
+  .home-description h3 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  .home-description p {
+    font-size: 1.1rem;
+  }
+}
