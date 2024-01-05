@@ -27,23 +27,42 @@
 }
 
 .topnav {
-  display: block; /* Ensure header is displayed as a block */
+  display: block;
   color: rgb(12, 12, 12);
-  text-align: center;
+  text-align: right;
   padding: 20px 40px;
   text-decoration: none;
-  float: right;
+  /* float: right; */
   list-style-type: none;
   margin: 10px;
 }
 
 .topnav span:hover {
-  background-color: #6d6666;
+  background-color: #9bb9c7;
 }
 
 @media screen and (max-width: 600px) {
-  ul.topnav li.right,
-  ul.topnav li {
+  .topnav {
     float: none;
   }
+}
+
+.active-link {
+  display: inline-block;
+  margin-right: 30px;
+  cursor: pointer;
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(2, 2, 15);
+  background-color: #ffffff;
+}
+
+.nav-link {
+  display: inline-block;
+  margin-right: 30px;
+  cursor: pointer;
+  padding: 10px;
+  text-decoration: none; /* Remove default underline */
+  color: black; /* Set the default link color */
+  background-color: transparent;
 }

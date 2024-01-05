@@ -10,14 +10,9 @@ import ProjectPage from "./Projects";
 import ContactPage from "./Contact";
 
 export const Website = () => {
-  // const HeaderButtons = HeaderData?.map((a) => a?.value);
   return (
     <>
       <div>
-        <div>
-          {/* <HeaderComponent /> */}
-          {/* <HomePage /> */}
-        </div>
         <div>
           <BrowserRouter>
             <Routes>

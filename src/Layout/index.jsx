@@ -1,7 +1,6 @@
 import React from "react";
 import { Outlet, Link } from "react-router-dom";
 import { HeaderData } from "../compnents/constant";
-// import { HeaderComponent } from "../compnents/Header";
 
 const Layout = () => {
   return (

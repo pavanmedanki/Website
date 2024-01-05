@@ -5,23 +5,22 @@ import { HeaderComponent } from "../../compnents/Header";
 
 export const EducationPage = () => {
   return (
-    // <div>
     <>
       <div>
         <HeaderComponent />
       </div>
       <div className="card-container">
         {EducationData?.map((edu) => (
-          <div className="card" key={edu.study}>
-            <h3>{edu.study}</h3>
+          <div className="card" key={edu.Course}>
+            <h3>{edu.Course}</h3>
             <p>{edu.branch}</p>
             <p>{edu.score}</p>
-            <p>{edu.title}</p>
+            <p>{edu.Institution}</p>
+            <p>{edu.startYear}-{edu.endYear}</p>
           </div>
         ))}
       </div>
     </>
-    // </div>
   );
 };
 
