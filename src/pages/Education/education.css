@@ -1,13 +1,14 @@
 .card-container {
-  display: grid;
-  justify-content: center;
-  overflow-x: auto; /* Add horizontal scrolling if needed */
-  gap: 20px; /* Adjust the gap to control the spacing between cards */
-  max-width: 100%; /* Adjust the maximum width as needed */
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  gap: 20px;
+  max-width: 1200px;
 }
 
 .card {
-  grid: 0 0 auto; /* Allow cards to grow to their content width */
+  flex: 0 0 auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.849);
   font-family: Arial;
   text-align: center;
